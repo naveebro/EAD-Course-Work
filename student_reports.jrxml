@@ -1,0 +1,99 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="student_reports" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f1572945-34b6-43b6-b75a-19b9000110c9">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Student Management system"/>
+	<query language="SQL"><![CDATA[SELECT * FROM  student]]></query>
+	<field name="firstName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="firstName"/>
+		<property name="com.jaspersoft.studio.field.label" value="firstName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="lastName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="lastName"/>
+		<property name="com.jaspersoft.studio.field.label" value="lastName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="Email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Email"/>
+		<property name="com.jaspersoft.studio.field.label" value="Email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="phoneNumber" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="phoneNumber"/>
+		<property name="com.jaspersoft.studio.field.label" value="phoneNumber"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="Address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Address"/>
+		<property name="com.jaspersoft.studio.field.label" value="Address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="programOfStudy" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="programOfStudy"/>
+		<property name="com.jaspersoft.studio.field.label" value="programOfStudy"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="studentID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="studentID"/>
+		<property name="com.jaspersoft.studio.field.label" value="studentID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="password" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="password"/>
+		<property name="com.jaspersoft.studio.field.label" value="password"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="eacdc430-5145-47c0-97d3-e149e10604de" x="140" y="0" width="287" height="71" fontSize="29.0" hTextAlign="Center">
+			<text><![CDATA[Students Reports]]></text>
+		</element>
+	</title>
+	<pageHeader height="33" splitType="Stretch"/>
+	<columnHeader height="45" splitType="Stretch">
+		<element kind="staticText" uuid="a2f8067f-04e2-4e14-b3e6-f274de29b573" x="0" y="-8" width="50" height="32" fontSize="10.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[StudentID]]></text>
+		</element>
+		<element kind="staticText" uuid="6ca5836f-66c9-467f-8604-ecf04477816c" x="60" y="-14" width="50" height="40" fontSize="10.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Name]]></text>
+		</element>
+		<element kind="staticText" uuid="de131f7b-1acc-48a2-b802-0543ed273e8e" x="120" y="-12" width="50" height="40" fontSize="10.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Email]]></text>
+		</element>
+		<element kind="staticText" uuid="03a68395-3dcf-42f4-8cc6-93d191745e46" x="180" y="-11" width="80" height="40" fontSize="10.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Phone Number]]></text>
+		</element>
+		<element kind="staticText" uuid="e52d88cf-a251-4a2f-a5c3-4954b2a9ca10" x="270" y="-12" width="130" height="40" fontSize="10.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Address]]></text>
+		</element>
+		<element kind="staticText" uuid="4127c6f3-4b84-468a-a96d-202003625c0b" x="410" y="-10" width="110" height="40" fontSize="10.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Programe Of Study]]></text>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<element kind="textField" uuid="005a67b9-3a2e-4070-a3a4-b1451c7b1e41" x="0" y="6" width="50" height="15" hTextAlign="Center">
+				<expression><![CDATA[$F{studentID}]]></expression>
+			</element>
+			<element kind="textField" uuid="c9b65fdc-9582-4f07-b0fb-8a8f437a3847" x="60" y="6" width="50" height="15" hTextAlign="Center">
+				<expression><![CDATA[$F{firstName}+" "+$F{lastName}]]></expression>
+			</element>
+			<element kind="textField" uuid="ac8aeda2-3db1-4eac-9ee1-d80988cf0880" x="120" y="6" width="50" height="15" hTextAlign="Center">
+				<expression><![CDATA[$F{Email}]]></expression>
+			</element>
+			<element kind="textField" uuid="6f9ebdc4-a577-4f45-829b-ebe6d462bb4a" x="180" y="6" width="90" height="15" hTextAlign="Center">
+				<expression><![CDATA[$F{phoneNumber}]]></expression>
+			</element>
+			<element kind="line" uuid="e2e6842c-b73a-4f14-9cad-79591ae6c940" x="-22" y="-2" width="595" height="1"/>
+			<element kind="textField" uuid="f390d687-4ac4-4c80-aaed-61eeab45536e" x="280" y="6" width="130" height="15" hTextAlign="Center">
+				<expression><![CDATA[$F{Address}]]></expression>
+			</element>
+			<element kind="textField" uuid="4cd0c697-90ae-4490-8fdb-d1353b32ba1f" x="410" y="6" width="110" height="15" hTextAlign="Center">
+				<expression><![CDATA[$F{programOfStudy}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
